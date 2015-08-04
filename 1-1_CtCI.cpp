@@ -7,11 +7,11 @@
 
 /*
 My first solution uses a map, each time a character is encountered an entry is created and assigned a value of 1.
-I chose map because this way my function can handle unicode and this way I dont allocate a huge amount of space that I wont use.
-I also created a function for if I was guranteed to only encounter ascii characters. I use a bitset with a size of 127 
+I chose map because this way my function can handle unicode and this way I don't allocate a huge amount of space that I wont use.
+I also created a function for if I was guaranteed to only encounter ascii characters. I use a bitset with a size of 127 
 (the full range of standard ascii) and initialize it to 0, flipping an index on when I encountered its corresponding ascii value.
 
-At any time if I encounter a duplicate character the algoritm ends and returns false.
+At any time if I encounter a duplicate character the algorithm ends and returns false.
 */
 
 #include <string>
@@ -43,7 +43,7 @@ bool withDataStructure(string testString)
 //less space than a traditional array/vector
 bool withDataStructureASCIIonly(string testString)
 {
-	bitset <127> asciiArray;
+	bitset <256> asciiArray;
 	for (auto i = 0; i < testString.length(); ++i)
 	{
 		if (asciiArray.test(testString[i]))

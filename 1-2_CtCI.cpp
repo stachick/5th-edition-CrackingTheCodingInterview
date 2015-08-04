@@ -27,7 +27,7 @@ void reverse(char* str)
 	char tempChar;
 
 	//finds end of the string. Mine searches for a '&' character which I
-	//am using to represent a NULL termination. Realistically my soulution
+	//am using to represent a NULL termination. Realistically my solution
 	//could be:
 	// while (*end)
 	while (*end != '&')
