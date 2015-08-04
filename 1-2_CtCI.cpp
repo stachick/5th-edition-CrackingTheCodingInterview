@@ -1,5 +1,5 @@
 //Shane Tachick
-//August 2, 2015
+//August 3, 2015
 //Cracking the Coding Interview 5th edition
 //Problem 1.2
 

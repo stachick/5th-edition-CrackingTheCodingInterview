@@ -56,7 +56,7 @@ bool withDataStructureASCIIonly(string testString)
 
 //this solution is O(n^2) but it is optimized so that if you are checking a letter for duplication it does not compare
 //itself with anything before it because that has already been checked. I considered doing a sort and then comparing for 
-//an O(n) compare but the only in-place sort that would work is quicksort which has a worst case of O(n^2) (because I cannot
+//an O(n) compare but the only in-place sort that would work is quick-sort which has a worst case of O(n^2) (because I cannot
 //control the data coming in), negating the benefit of sorting.
 bool withoutDataStructure(string testString)
 {
